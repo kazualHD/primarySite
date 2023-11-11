@@ -1,0 +1,79 @@
+ body {
+            background-image: url(../components/fon.jpg);
+            background-position: center center;
+            background-size: 300px;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        .grid-6 {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: auto 1fr 1fr 1fr 1fr auto;
+            grid-template-areas: 
+            'header header header header header header' 
+            '. main main main main .' 
+            '. main main main main .'
+            '. main main main main .'
+            '. main main main main .'
+            'footer footer footer footer footer footer';
+            gap: 15px;
+        }
+
+        .main {
+            grid-area: main;
+            display: grid;
+            grid-template-areas: 
+            'children children'
+            'children children'
+            'photo photo'
+            'photo photo';
+            gap: 15px; 
+
+        }
+        .src {
+            grid-area: children;
+            border: 2px solid red;
+            background-image: url('../components/children.jpg');
+            background-size: cover;
+            background-position: center center;
+
+        }
+
+        .header {
+            display: flex;
+            grid-area: header;
+            justify-content: space-between;
+        }
+
+        .header-list {
+            display: flex;
+            margin: 0;
+            list-style: none;
+            justify-content: center; /* Центрируем элементы списка по горизонтали */
+            align-items: center; /* Центрируем элементы списка по вертикали */
+        }
+
+        .header-item {
+            margin: 0 50px;
+        }
+
+        .header-link {
+            font-size: 15px;
+            color: rgb(13, 0, 255);
+            text-decoration: none;
+        }
+
+        .logo {
+            font-size: 30px;
+        }
+
+        .footer {
+            background: teal;
+            grid-area: footer;
+            padding: 15px;
+        }
+
+        .child-image {
+            justify-items: center
+        }
