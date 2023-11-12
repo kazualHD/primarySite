@@ -5,7 +5,10 @@
     background-image: url('../components/fon.jpg');
     height: 100vh;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+}
         .main {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
@@ -21,60 +24,60 @@
       }
       
       header {
-          display: flex;
-          background-color: #fff;
-          padding: 15px;
-          justify-content: center;
-          box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.205);
-      
-      }
-      
-      header div {
-          background-color: #dca5fa;
-          margin: 0 15px;
-          display: block;
-          padding: 10px;
-          width: 200px;
-          text-align: center;
-          border: 1px rgba(0, 0, 0, 0.283) solid;
-          border-radius: 50px;
-          font-size: 30px;
-          font: caption;
-          cursor: pointer;
-          transition: .5s;
-      }
-      
-      header div ul {
-          position: absolute;
-      
-      }
-      
-      header div ul li {
-          background-color: #dca5fa;
-          margin-top: 10px;
-          width: 200px;
-          padding: 10px;
-          list-style-type: none;
-          position: relative;
-          top: 10px;
-          right: 50px;
-          border: 1px rgba(0, 0, 0, 0.273) solid;
-          border-radius: 50px;
-          display: none;
-          transition: .5s;
-      }
-      
-      header div:hover {
-          background-color: rgb(235, 211, 255);
-      }
-      
-      header div:hover ul li {
-         display: block;
-      }
-      
-      header div ul li:hover {
-          background-color: rgb(235, 211, 255);
-      }
+        display: flex;
+        background-color: #fff;
+        padding: 20px;
+        justify-content: center;
+        box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.205);
+    
+    }
+    
+    header div {
+        background-color: #dca5fa;
+        margin: 0 15px;
+        display: block;
+        padding: 10px;
+        width: 200px;
+        text-align: center;
+        border: 1px rgba(0, 0, 0, 0.283) solid;
+        border-radius: 50px;
+        font-size: 30px;
+        font: caption;
+        cursor: pointer;
+        transition: .5s;
+    }
+    
+    header div ul {
+        position: absolute;
+    
+    }
+    
+    header div ul li {
+        background-color: #dca5fa;
+        margin-top: 5px;
+        width: 200px;
+        padding: 10px;
+        list-style-type: none;
+        position: relative;
+        top: 10px;
+        right: 10px;
+        border: 1px rgba(0, 0, 0, 0.273) solid;
+        border-radius: 50px;
+        display: none;
+        transition: .5s;
+    }
+    
+    header div:hover {
+        background-color: rgb(235, 211, 255);
+    }
+    
+    header div:hover ul li {
+       display: block;
+    }
+    
+    header div ul li:hover {
+        background-color: rgb(235, 211, 255);
+    }
 
         .logo {
             font-size: 30px;
@@ -126,7 +129,7 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        font: 17px/2 'Roboto', sans-serif;
+        font: 15px/1.5 'Roboto', sans-serif;
         justify-content: flex-end;
       }
       .laminat-greeting-item {
@@ -143,11 +146,13 @@
 
       .laminat-div {
         font-weight: bold;
-        padding: 20px 0;
+        padding: 30px 0;
         margin-left: 60px
       }
       .laminat-h2 {
+        margin-top: 15px;
         margin-left: 20px;
+        margin-bottom: 30px;
       }
 
       .divider {
@@ -157,4 +162,7 @@
         background-position: center;
         background-repeat: no-repeat; 
         min-height: 100px;
+    }
+    .child-name {
+      margin-top: 50px;
     }

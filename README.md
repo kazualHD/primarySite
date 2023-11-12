@@ -1,1 +1,2 @@
-# primarySite вонючка
+## Deploy: 
+https://vercel.com/new/success?developer-id=&external-id=&redirect-url=&branch=main&deploymentUrl=primary-site-zulfia-azir-4ww46sscu-kazualhd.vercel.app&projectName=primary-site-zulfia-azir&s=https%3A%2F%2Fgithub.com%2FkazualHD%2FprimarySiteZulfia&gitOrgLimit=&hasTrialAvailable=1&totalProjects=1
